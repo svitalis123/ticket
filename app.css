@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+body,
+html {
+  margin: 0.001px;
+  padding: 0.001px;
+  overflow-y: hidden;
+}
+
+.container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.container_left {
+  flex: 0.5;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./empty-dark-abstract-background-background-empty-show-scene-glow-neon-lights-neon-figures-empty-concert-stage-reflection-light-pavement_183410-7.webp)55% 100% no-repeat;
+  background-size: cover;
+}
+
+#concertimg {
+  width: 65%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container_right {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  background: url(https://www.habasit.com/-/media/Celum-Connect/2020/11/26/12/53/_DSC0149.jpg?w=780) no-repeat;
+}
+
+.container_right_form_holder {
+  height: 500px;
+  width: 100%;
+  border: none;
+}
+
+.container_right_form_holder > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container_right_form_holder > form > input {
+  width: 80%;
+  height: 40px;
+  margin: 2rem;
+  padding: 8px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  letter-spacing: 1.2;
+}
+
+.container_right_form_holder > form > button {
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(0, 128, 0);
+  font-weight: bolder;
+  color: #fff;
+  font-size: medium;
+  letter-spacing: 1.08;
+  cursor: pointer;
+  width: 80%;
+  transition: background-color 0.4s ease;
+}
+
+.container_right_form_holder > form > button:hover {
+  background-color: darkgreen;
+}
+/* 
+
+litmus green 50%
+#AE3AF4
+30%
+ crimson 20%
+
+*/
+
+/* animation of form */
+
+#fullname {
+  animation: in 0.5s ease-in;
+}
+
+@keyframes in{
+  0%{
+    font-size: small;
+  }
+}
