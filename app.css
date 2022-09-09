@@ -96,11 +96,23 @@ litmus green 50%
 /* animation of form */
 
 #fullname {
-  animation: in 0.5s ease-in;
+  animation: in 0.8s ease-in;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes in{
   0%{
-    font-size: small;
+    width: 20%;
+  }
+
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 70%;
+  }
+  75%{
+    width: 90%;
   }
 }
